@@ -79,7 +79,7 @@ function Home() {
           />
           <Marker position={[jsonData.location.lat, jsonData.location.lng]}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              {jsonData.location.city}, {jsonData.location.country}
             </Popup>
           </Marker>
         </MapContainer> : error ? <div className="loading">Error IP Address</div> : <div className="loading">Loading...</div>}
